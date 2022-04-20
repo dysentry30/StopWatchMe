@@ -31,7 +31,7 @@ git pull https://github.com/dysentry30/StopWatchMe.git
 
 ### Demo <a name = "demo"></a>
 
-Click this [link]() to preview the app.
+Click this [link](https://dysentry30.github.io/StopWatchMe) to preview the app.
 
 ## Usage <a name = "usage"></a>
 
