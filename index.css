@@ -52,79 +52,10 @@ main {
 .min,
 .hour {
     position: relative;
-    width: 15%;
-}
-
-.sec .rect {
-    position: absolute;
-    width: 200%;
-    height: 150%;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    overflow: hidden;
-    z-index: -1;
-    border: 2px solid rgb(30, 30, 28);
-}
-
-.sec .rect .fill {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: -100%;
-    left: 0;
-    background: rgb(155, 30, 30);
-    z-index: -2;
-    transition: top 0.3s ease-in-out;
-}
-
-.min .rect {
-    position: absolute;
-    width: 220%;
-    height: 150%;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    overflow: hidden;
-    z-index: -1;
-    border: 2px solid rgb(30, 30, 28);
-}
-
-.min .rect .fill {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: -100%;
-    left: 0;
-    background: rgb(40, 155, 30);
-    z-index: -2;
-    transition: top 0.3s ease-in-out;
-}
-
-.hour .rect {
-    position: absolute;
-    width: 200%;
-    height: 150%;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    overflow: hidden;
-    z-index: -1;
-    border: 2px solid rgb(30, 30, 28);
-}
-
-.hour .rect .fill {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: -100%;
-    left: 0;
-    background: rgb(30, 132, 155);
-    z-index: -2;
-    transition: top 0.3s ease-in-out;
+    padding: 2rem 4rem;
+    background: rgb(28, 28, 28);
+    border-radius: 5px;
+    /* width: 15%; */
 }
 
 .overlay .bg-50 {
@@ -188,8 +119,33 @@ main {
 
 .overlay .bg-50 .actions #reset:active,
 .overlay .bg-50 .actions #stop:active {
-    /* background-color: white;
-    color: rgb(59, 58, 58); */
-    /* cursor: ; */
     padding: 0.2rem, 0.7rem;
+}
+
+footer {
+    position: absolute;
+    top: 95%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer .social-media {
+    position: relative;
+    width: 20%;
+    height: 10%;
+    /* background: White; */
+}
+
+footer .social-media a img {
+    background: white;
+    padding: 0.2rem 0.2rem;
+    border-radius: 50%;
+}
+
+footer .social-media a {
+    text-decoration: none;
+    color: white;
 }
